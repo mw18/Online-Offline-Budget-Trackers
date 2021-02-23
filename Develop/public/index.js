@@ -1,6 +1,7 @@
 let transactions = [];
 let myChart;
 
+//Fetch reques getting data from Mongo db using Mongoose
 fetch("/api/transaction")
   .then(response => {
     return response.json();
