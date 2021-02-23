@@ -1,5 +1,4 @@
 // conditional that determines if we have a serviceworket and if so, to locate and use it 
-
 if ('serviceWorker' in navigator) {
   window.addEventListener('load', () => {
     navigator.serviceWorker.register('/service-worker.js')
