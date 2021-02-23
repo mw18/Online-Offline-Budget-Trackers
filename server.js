@@ -17,7 +17,7 @@ app.use(express.static("public"));
 
 // mongo,db connection installed
 mongoose.connect(
-  "mongodb+srv://mward:rnSxtYD8wtcHSm-@cluster0.wjvha.mongodb.net/myFirstDatabase?retryWrites=true&w=majority" || 'mongodb://localhost/deep-thoughts',
+  process.env.MONGODB_URI || 'mongodb://localhost/deep-thoughts',
   {
     useNewUrlParser: true,
     useUnifiedTopology: true,
